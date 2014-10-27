@@ -16,7 +16,6 @@ m1.medium为虚拟机的类型，emi-27E541EE为上传到eucalyptus的linux镜�
 ./start-instances.sh -n 3 -t m1.medium  -i emi-27E541EE  -k wyp-keypair 
 
 ./deploy-hadoop.sh -n nodes.txt -p publicIps.txt -k wyp-keypair.private
------------------------------------------------------------------------------
 
 
 运行后查看jps各个进程都正确，将nodes.txt内容拷贝到本地/etc/hosts中
